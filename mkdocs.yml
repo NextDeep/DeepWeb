@@ -1,0 +1,99 @@
+nav:
+  - Home:
+    - index.md
+
+  - DeepRBT:
+    - index.md
+
+  - DeepAI:
+    - index.md
+
+  - DeepWeb:
+    - index.md
+
+  - DeepMusic:
+    - index.md
+
+  - DeepSex:
+    - index.md
+
+  - x · π:
+    - index.md
+
+
+
+
+
+
+# -------------------------------------------------------整体框架部分---------------------------------------------------------- #
+site_name: ND | NextDeep # 网站名称
+theme: # 主题
+  name: material # 主题名称
+
+  icon: # 网站左上角LOGO
+    logo: material/github # LOGO图标
+
+  palette: # 亮色、暗色模式调整按钮
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: orange
+      toggle:
+        icon: material/lightbulb
+        name: 切换到暗色模式
+        
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: deep purple
+      toggle:
+        icon: material/lightbulb-outline
+        name: 切换到亮色模式
+
+  language: zh # 一些提示性的文字会变成中文，比如搜索框中的提示
+
+  features:
+    - navigation.instant # 现在页面不会跳转,而是类似单页应用,搜索和各种跳转都是在当前页面完成,对美观有很大帮助
+    - navigation.tracking # 页面滚动时，导航栏高亮当前页面
+    - navigation.sections # 使导航栏分块
+    - navigation.expand # 默认展开导航
+    - navigation.prune # 只渲染当前页面的导航    
+    - navigation.tabs # 使用 Tab 来进行分类、页面上方的标签页
+    - navigation.top # 返回顶部的按钮，在上滑时出现
+    - navigation.indexes # 给每个 Tab 添加一个 index.md，且在点击 Tab 时打开
+    - navigation.expand # 打开 Tab 时左侧目录全部展开
+    # - navigation.footer # 页脚提示下一章
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索的关键词文章加入高亮
+    - content.code.copy # 可以通过按钮复制代码
+    - content.action.edit # [点击按钮跳转至 GitHub 修改 Markdown 源文件]
+    - toc.follow # 滚动的时候侧边栏自动跟随
+    - search.share # 搜索结果分享
+
+copyright: © 沈阳毕慕尔斯工程技术有限公司 | ℗ BIMDOG工作室 | ™般若玖凌
+
+extra: # 页脚添加社交网络图标和链接
+  social:
+    - name: GitHub | NextDeep # 鼠标悬浮时提示
+      icon: fontawesome/brands/github
+      link: https://github.com/NextDeep
+
+    - name: Bilibili | BIMDOG工作室
+      icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/388561300
+
+    - name: QQ:1013712275
+      icon: fontawesome/brands/qq
+      link: https://baidu.com
+      
+    - name: 打赏支持
+      icon: fontawesome/solid/mug-saucer
+      link: https://baidu.com
+
+plugins: # 插件：搜索、标签
+  - search: # 搜索功能
+      lang:
+        - zh
+        - en
+        - ja
+  - tags # 给单篇文章添加标签
